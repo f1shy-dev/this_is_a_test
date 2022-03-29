@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.use(express.static("public"));
+app.use(express.static("docs"));
 // return a html element on /api
 app.get("/api", (req, res) => {
   res.send(
